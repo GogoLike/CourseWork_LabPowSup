@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=165
+NLCnt=183
 TXCnt=0
 
 [shapedef]
@@ -275,7 +275,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=276
+Used=275
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -285,8 +285,8 @@ Pin="PinA",0,0,-3,-7
 Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
-Mask=6401
-Used=29
+Mask=6145
+Used=28
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -298,7 +298,7 @@ Name=Resistor
 Definition=Resistor
 Shape=Resistor
 Mask=6401
-Used=171
+Used=170
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -779,7 +779,7 @@ Pxs=1032,216,1032,400
 Pxs=1032,216,1104,216
 
 [Wire]
-Pxs=968,432,1008,432
+Pxs=968,432,984,432
 
 [Comp]
 Name=Resistor
@@ -843,7 +843,7 @@ Pxs=472,536,472,560
 Pxs=472,608,472,640
 
 [Wire]
-Pxs=472,640,536,640
+Pxs=472,640,544,640
 
 [Wire]
 Pxs=1104,640,1104,656
@@ -867,7 +867,42 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=680,432,920,432
+Pxs=680,432,904,432
+
+[Comp]
+Name=1N5818
+Px=920,392
+
+[Attr]
+ON=18,13,PART
+V=D3
+Style=8192
+
+[Attr]
+ON=18,27,MODEL
+V=1N5818
+
+[Attr]
+ON=18,55,PACKAGE
+V=DO-41
+
+[Wire]
+Pxs=968,392,984,392
+
+[Wire]
+Pxs=984,392,984,432
+
+[Wire]
+Pxs=984,432,1008,432
+
+[Wire]
+Pxs=904,392,920,392
+
+[Wire]
+Pxs=904,392,904,432
+
+[Wire]
+Pxs=904,432,920,432
 
 [Wire]
 Pxs=680,464,728,464
@@ -879,7 +914,35 @@ Pxs=728,464,728,640
 Pxs=728,640,776,640
 
 [Wire]
-Pxs=776,640,1032,640
+Pxs=1032,536,1032,640
+
+[Wire]
+Pxs=1032,640,1104,640
+
+[Comp]
+Name=Capacitor
+Px=544,560
+Rot=1
+
+[Attr]
+ON=12,12,PART
+V=C4
+Style=8192
+
+[Attr]
+ON=12,26,CAPACITANCE
+V=1n
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=544,608,544,640
+
+[Wire]
+Pxs=544,640,728,640
 
 [Comp]
 Name=Capacitor
@@ -904,7 +967,10 @@ V
 Pxs=776,616,776,640
 
 [Wire]
-Pxs=776,368,776,568
+Pxs=776,640,1032,640
+
+[Wire]
+Pxs=776,368,776,552
 
 [Wire]
 Pxs=680,368,776,368
@@ -920,7 +986,7 @@ Style=8192
 
 [Attr]
 ON=14,-44,RESISTANCE
-V=7.5k
+V=1k
 Style=8192
 
 [Attr]
@@ -934,7 +1000,80 @@ Pxs=648,336,776,336
 Pxs=776,336,776,368
 
 [Wire]
-Pxs=232,640,416,640
+Pxs=472,336,600,336
+
+[Wire]
+Pxs=472,336,472,368
+
+[Wire]
+Pxs=472,368,568,368
+
+[Comp]
+Name=Capacitor
+Px=408,344
+Rot=1
+
+[Attr]
+ON=12,12,PART
+V=C6
+Style=8192
+
+[Attr]
+ON=12,26,CAPACITANCE
+V=100n
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=408,336,408,344
+
+[Wire]
+Pxs=408,336,472,336
+
+[Wire]
+Pxs=408,392,408,400
+
+[Wire]
+Pxs=408,400,568,400
+
+[Wire]
+Pxs=408,400,408,640
+
+[Wire]
+Pxs=408,640,472,640
+
+[Comp]
+Name=Resistor
+Px=624,552
+
+[Attr]
+ON=18,6,PART
+V=R7
+Style=8192
+
+[Attr]
+ON=18,20,RESISTANCE
+V=16k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=544,552,624,552
+
+[Wire]
+Pxs=544,552,544,560
+
+[Wire]
+Pxs=672,552,776,552
+
+[Wire]
+Pxs=776,552,776,568
 
 [Comp]
 Name=Capacitor
@@ -1013,6 +1152,9 @@ Pxs=304,256,376,256
 [Wire]
 Pxs=232,424,232,640
 
+[Wire]
+Pxs=232,640,408,640
+
 [Comp]
 Name=6N136
 Px=1352,776
@@ -1042,6 +1184,21 @@ Pxs=376,256,720,256
 
 [Wire]
 Pxs=360,808,1264,808
+
+[Wire]
+Pxs=360,336,360,808
+
+[Wire]
+Pxs=360,336,408,336
+
+[Wire]
+Pxs=344,848,1264,848
+
+[Wire]
+Pxs=344,400,344,848
+
+[Wire]
+Pxs=344,400,408,400
 
 [Comp]
 Name=BZX85C15
@@ -1445,94 +1602,70 @@ Name=Ground
 Px=1920,344
 Rot=7
 
-[Wire]
-Pxs=536,336,600,336
-
-[Wire]
-Pxs=536,336,536,464
-
-[Wire]
-Pxs=536,464,568,464
-
 [Comp]
-Name=Capacitor
-Px=536,560
-Rot=1
+Name=Voltage Source
+Px=72,584
+Rot=3
 
 [Attr]
-ON=12,12,PART
-V=C12
+ON=-31,-27,PART
+V=V2
 Style=8192
 
 [Attr]
-ON=12,26,CAPACITANCE
-V=2.2n
-Style=8192
+ON=-72,-41,VALUE
+V=DC 0 AC 1 0 Pulse 0 5 0 4800n 4800n 5n 10u
 
 [Attr]
 ON=0,0,PACKAGE
 V
 
-[Wire]
-Pxs=536,464,536,560
-
-[Wire]
-Pxs=536,608,536,640
-
-[Wire]
-Pxs=536,640,728,640
-
-[Wire]
-Pxs=360,368,568,368
-
-[Wire]
-Pxs=360,368,360,808
-
-[Wire]
-Pxs=416,400,568,400
-
-[Wire]
-Pxs=416,400,416,640
-
-[Wire]
-Pxs=416,640,472,640
-
-[Comp]
-Name=Resistor
-Px=1032,568
-Rot=1
+[Attr]
+ON=0,0,Saved_None
+V=DC 400 AC 1 0 
+Style=256
 
 [Attr]
-ON=8,11,PART
-V=R13
-Style=8192
+ON=0,0,Saved_SFFM
+V=DC 0 AC 1 0 SFFM 0 1 1e6 .5 1e7
+Style=256
 
 [Attr]
-ON=8,25,RESISTANCE
-V=0.5
-Style=8192
+ON=0,0,SMOOTHING
+V=N
+Style=256
 
 [Attr]
-ON=0,0,PACKAGE
-V
+ON=0,0,Saved_PulseS
+V=N
+Style=256
+
+[Attr]
+ON=0,0,FRACTION
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_PulseF
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_Pulse
+V=DC 0 AC 1 0 Pulse 0 5 0 4800n 4800n 5n 10u
+Style=256
 
 [Wire]
-Pxs=1032,536,1032,568
+Pxs=72,464,72,536
 
 [Wire]
-Pxs=1032,616,1032,640
+Pxs=72,464,568,464
 
 [Wire]
-Pxs=1032,640,1104,640
+Pxs=72,584,72,640
 
 [Wire]
-Pxs=1168,856,1264,856
-
-[Wire]
-Pxs=1168,640,1168,856
-
-[Wire]
-Pxs=1104,640,1168,640
+Pxs=72,640,232,640
 
 [Schematic]
 CurrentSection 0=0
@@ -1732,7 +1865,7 @@ Scale 1=1
 Scale 2=1
 SB 3=0,48
 Scale 3=1.3333333333333333
-Px=1261,417
+Px=1803,735
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1781,7 +1914,6 @@ Type=Text
 Print=False
 Enable=True
 Name=Text
-SB 0=0,21
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -1878,8 +2010,6 @@ Text=+ IS    = 0.01E-12
 Text=+ RS    = 0
 Text=+ BV    = 879
 Text=* END OF MODELLING
-Text=.OPTIONS ITL1=100
-Text=.OPTIONS PIVREL=0.001
 
 [Text Area]
 Section=0
@@ -2156,10 +2286,10 @@ AliasID=1
 XExp=T
 YExp=V(6)
 XRng=4e-5
-YRng=20
+YRng=7.5
 Options=LINEARX,LINEARY
 Range Grid X=8e-6
-Range Grid Y=4
+Range Grid Y=1.5
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -2182,10 +2312,10 @@ AliasID=2
 XExp=T
 YExp=V(3)
 XRng=4e-5
-YRng=20
+YRng=7.5
 Options=LINEARX,LINEARY
 Range Grid X=8e-6
-Range Grid Y=4
+Range Grid Y=1.5
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -2203,15 +2333,8 @@ NOFmtY=3E
 
 [WaveForm]
 Analysis=Transient
-Plt=1
-AliasID=3
-XExp=T
-YExp=V(5)
-XRng=4e-5
-YRng=20
+AliasID=-1
 Options=LINEARX,LINEARY
-Range Grid X=8e-6
-Range Grid Y=4
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
