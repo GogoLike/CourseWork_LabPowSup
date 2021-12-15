@@ -1,0 +1,439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0042)http://www.radiobox.ru/guides/resmark.html -->
+<HTML><HEAD><TITLE>Radiobox - Цветовая маркировка резисторов, конденсаторов, индуктивностей</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="маркировка резистор конденсатор емкость индуктивность" 
+name=Keywords>
+<META 
+content="Radiobox - Цветовая маркировка резисторов, конденсаторов, индуктивностей" 
+name=Description>
+<META content=all name=Robots>
+<META content="7 days" name=revisit-after><LINK 
+href="ColorData.files/mycss.css" 
+type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript 
+src="ColorData.files/menu.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+// Copyright (C) IMcSimoff Radiobox Co
+// При использовании материалов сайта ссылка на radiobox.ru обязательна
+var colors = new Array("white","gray","violet","blue","green","yellow","orange","red","brown","black","goldenrod","gainsboro");
+var ncolors = new Array("Белый","Серый","Фиолетовый","Голубой","Зеленый","Желтый","Оранжевый","Красный","Коричневый","Черный","Золотой","Серебряный");
+var posarr = new Array (1,1,1,1,1);
+var numCol = 3;
+var numEl = 1;
+var arrLens = new Array(3);
+arrLens[0] = new Array(1,1,1,1,1,1,1,1,1)
+arrLens[1] = new Array(1,1,1,1,1,1,1,1,1,1)
+arrLens[2] = new Array(1,1,1,1,1,1,1,1,1,1,1,1)
+
+function ch_res(a) {
+var str = '';
+var i = 0;
+if (a.checked) {
+	str = a.id;
+	i = parseInt(str.charAt(str.length-1),16);
+	str = str.charAt(str.length-2);
+	posarr[str-1] = i;
+	str = 'lag'+str;
+	tEl = (IE)? document.all(str) : document.getElementById(str);
+	tEl.style.backgroundColor = colors[i-1];
+	clcVal();
+}                                                   
+		
+}
+
+
+function clcCols() {
+var tEl;
+
+numCol = 0;
+tEl = (IE)? document.all('fltwo') : document.getElementsByName('fltwo');
+for (var i = 0; i < tEl.length; i++) {
+	if (tEl[i].checked) numCol = i + 3;
+}
+clcColsLen();
+return;
+}
+
+// Правим при необходимости массив текущих значений выбирая ближайшее разрешенное
+function retNearest() {
+
+for (var i = 0; i < numCol; i++) {
+	if (arrLens[i][posarr[i]-1] == 0) {
+		for (var j = 1; j <= 10; j++) {
+			if (posarr[i]+j <= arrLens[i].length) {
+				if (arrLens[i][posarr[i]-1+j] == 1) {
+					posarr[i] += j; break;
+				}
+			}
+			if (posarr[i]-j > 0) {
+				if (arrLens[i][posarr[i]-1-j] == 1) {
+					posarr[i] -= j; break;
+				}
+			}
+		}
+	}
+}
+}
+
+function checkRadio() {
+var nameradio = "";
+for (var i = 0; i < numCol; i++) {
+	nameradio = "fl"+(i+1)+posarr[i].toString(16);
+	((IE)? document.all(nameradio) : document.getElementById(nameradio)).checked = true;
+}
+}
+
+function clcEl() {
+var tEl;
+
+numEl = 0
+tEl = (IE)? document.all('flone') : document.getElementsByName('flone');
+for (var i = 0; i < tEl.length; i++) {
+	if (tEl[i].checked) numEl = i + 1;
+}
+return;
+}
+
+function fnShowProps(obj, objName){
+    var result = "";
+    for (var i in obj) // обращение к свойствам объекта по индексу
+        result += objName + "." + i + " = " + obj[i] + "<br />\n";
+    document.write(result);
+}
+
+function clcColsLen() {
+
+if (numCol == 3) {
+	arrLens = new Array(3);
+	arrLens[0] = new Array(1,1,1,1,1,1,1,1,1);
+	arrLens[1] = new Array(1,1,1,1,1,1,1,1,1,1);
+	arrLens[2] = new Array(1,1,1,1,1,1,1,1,1,1,1,1);
+	if (numEl == 3)	arrLens[2] = new Array(0,0,0,0,0,0,1,1,1,1,1,1);
+}
+else if (numCol == 4) {
+	arrLens = new Array(4);
+	arrLens[0] = new Array(1,1,1,1,1,1,1,1,1);
+	arrLens[1] = new Array(1,1,1,1,1,1,1,1,1,1);
+	arrLens[2] = new Array(1,1,1,1,1,1,1,1,1,1,1,1);
+	arrLens[3] = new Array(0,1,1,1,1,0,0,1,1,0,1,1);
+	if (numEl == 2)	{
+		arrLens[3] = new Array(1,1,0,0,0,0,0,1,1,1,1,1);
+	}
+	if (numEl == 3)	{
+		arrLens[2] = new Array(0,0,0,0,0,0,1,1,1,1,1,1);
+		arrLens[3] = new Array(0,0,0,0,0,0,0,0,0,1,1,1);
+	}
+}
+else if (numCol == 5) {
+	arrLens = new Array(5);
+	arrLens[0] = new Array(1,1,1,1,1,1,1,1,1);
+	arrLens[1] = new Array(1,1,1,1,1,1,1,1,1,1);
+	arrLens[2] = new Array(1,1,1,1,1,1,1,1,1,1);
+	arrLens[3] = new Array(1,1,1,1,1,1,1,1,1,1,1,1);
+	if (numEl == 1)	arrLens[4] = new Array(0,1,1,1,1,0,0,1,1,0,1,1);
+	if (numEl == 2)	arrLens[4] = new Array(1,1,0,0,0,0,0,1,1,1,1,1);
+	if (numEl == 3)	arrLens[4] = new Array(0,0,0,0,0,0,0,0,0,0,0,0);
+}
+return;
+}
+
+// Обрабатываем изменение типа элемента (сопротивление, конденсатор, индуктивность)
+function chEl() {
+var tEl = (IE)? document.all('nm3') : document.getElementById('nm3');
+var tEl2 = (IE)? document.all('hw3') : document.getElementById('hw3');
+var tEl3 = (IE)? document.all('fltwo') : document.getElementsByName('fltwo');
+
+clcEl();
+chLags();
+
+if (numEl == 1) {
+tEl.style.cssText = "VISIBILITY: hidden;";
+tEl2.style.cssText = "VISIBILITY: visible;";
+} else if (numEl == 2) {
+tEl.style.cssText = "VISIBILITY: visible;";
+tEl2.style.cssText = "VISIBILITY: visible;";
+} else {
+tEl.style.cssText = "VISIBILITY: hidden;";
+tEl2.style.cssText = "VISIBILITY: hidden;";
+if (tEl3[2].checked) tEl3[1].checked = true;
+}
+chLags();
+return;
+}
+
+// Обрабатываем изменение количества полос
+function chLags() {
+clcCols();
+var tEl;
+var nEl;
+var i,j;
+tEl = (IE)? document.all('mtbl') : document.getElementById('mtbl');
+nEl = 'fl'+numCol;
+
+
+for (var i = 1; i < 13; i++) {
+	for (var j = 1; j <= 5; j++) {
+		if (numCol < j || arrLens[j-1].length<i) {
+			tEl.rows[i-1].cells[j-1].style.cssText = "VISIBILITY: hidden;";
+		} else if (arrLens[j-1][i-1] == 0) {
+			tEl.rows[i-1].cells[j-1].style.cssText = "VISIBILITY: hidden;";
+		} else {
+			tEl.rows[i-1].cells[j-1].style.cssText = "VISIBILITY: visible;";
+		}
+	}
+}
+
+retNearest();
+checkRadio();
+drawres();
+clcVal();
+
+}
+
+// Рисуем полоски на корпусе
+function drawres() {
+
+	for (var j = 1; j <= 5; j++) {
+		tEl = (IE)? document.all('lag'+j) : document.getElementById('lag'+j);
+		if (numCol < j) {
+			tEl.style.backgroundColor = '#D9C09C';
+		}
+		else {
+			tEl.style.backgroundColor = colors[posarr[j-1]-1];
+		}
+	}
+
+return;
+}
+
+function draw() {
+
+var _table = "";
+
+_table += '			<table width=100% cellpadding=0 cellspacing=0 border=0>';
+if (!IE)
+_table += '			<tr height=5%><td>&nbsp;</td></tr>';
+
+_table += '			<tr height=25%><td align=center>';
+_table += '				<table cellpadding=0 cellspacing=0 border=0>';
+
+_table += '				<tr height="25"><td width=50>&nbsp</td><td rowspan=3 class=detal width=30>&nbsp</td><td rowspan=3 width=15 bgcolor=#D9C09C Id=lag1>&nbsp;</td><td rowspan=3 width=10 class=detal>&nbsp;</td><td rowspan=3 width=15 bgcolor=#D9C09C Id=lag2>&nbsp;</td><td rowspan=3 width=10 class=detal>&nbsp;</td><td rowspan=3 width=15 bgcolor=#D9C09C Id=lag3>&nbsp;</td><td rowspan=3 width=10 class=detal>&nbsp;</td><td rowspan=3 width=15 bgcolor=#D9C09C Id=lag4>&nbsp;</td><td rowspan=3 width=10 class=detal>&nbsp;</td><td rowspan=3 width=15 bgcolor=#D9C09C Id=lag5>&nbsp;</td><td rowspan=3 class=detal width=30>&nbsp</td><td width=50>&nbsp</td></tr>';
+
+_table += '				<tr height="3"><td class=detal></td><td class=detal></td></tr>';
+_table += '				<tr height="25"><td></td><td></td></tr>';
+_table += '				</table>';
+_table += '			</td></tr>';
+if (!IE)
+_table += '			<tr height=5%><td>&nbsp;</td></tr>';
+_table += '			<tr>';
+_table += '				<td align=center valign=top>';
+_table += '				<table Id="mtbl" cellpadding=0 cellspacing=5 border=0 style="margin: 0px 0px 0px 75px;">';
+
+for (var i = 1; i < 13; i++) {
+	_table += '				<tr>';
+	for (var j = 1; j <= 5; j++) {
+		if (numCol < j) {
+			_table += '					<td class='+colors[i-1]+' style="VISIBILITY:hidden">';
+			_table += '						<input type="radio" Id="fl'+j+i.toString(16)+'" name="fl'+j+'" style="FILTER:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=50);-moz-opacity:0.5" onClick="ch_res(this)" '+((i==1)? 'checked>' : '>');
+			_table += '					</td>';
+		} else {
+		if (arrLens[j-1].length<i || arrLens[j-1][i-1] == 0) {
+			_table += '					<td class='+colors[i-1]+' style="VISIBILITY:hidden">';
+			_table += '						<input type="radio" Id="fl'+j+i.toString(16)+'" name="fl'+j+'" style="FILTER:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=50);-moz-opacity:0.5" onClick="ch_res(this)" '+((i==1)? 'checked>' : '>');
+			_table += '					</td>';
+		}
+		else {
+			_table += '					<td class='+colors[i-1]+' style="VISIBILITY:visible">';
+			_table += '						<input type="radio" Id="fl'+j+i.toString(16)+'" name="fl'+j+'" style="FILTER:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=50);-moz-opacity:0.5" onClick="ch_res(this)" '+((i==1)? 'checked>' : '>');
+			_table += '					</td>';
+		}
+		}
+	}
+	_table += '<td>&nbsp;</td><td>'+ncolors[i-1]+'</td></tr>';
+
+}
+
+
+_table += '				</table>';
+_table += '				</td>';
+_table += '			</tr>';
+_table += '			</table>';
+
+document.write(_table);
+
+}
+
+function clcVal() {
+var res = "";
+var tlr = "";
+var val = 0;
+var kf = 1;
+var factor = new Array(9,8,7,6,5,4,3,2,1,0,-1,-2);
+var tolerance = new Array("","0.05%","0.1%","0.25%","0.5%","","","2%","1%","","5%","10%");
+if (numEl == 2) tolerance = new Array("+80/-20%","30%","","","","","","2%","1%","20%","5%","10%");
+if (numEl == 3) tolerance = new Array("","","","","","","","","","20%","5%","10%");
+for (var j = 0; j < 5; j++) {
+	switch (j) {
+		case 0: val += (10-posarr[j])*((numCol == 5)? 100 : 10); break;
+		case 1: val += (10-posarr[j])*((numCol == 5)? 10 : 1); break;
+		case 2: if(numCol == 5) val += 10-posarr[j];
+			else kf = eval("1e"+factor[posarr[j]-1]);
+			break;
+		case 3: if(numCol == 5) kf = eval("1e"+factor[posarr[j]-1]);
+			else if(numCol == 4) tlr = tolerance[posarr[3]-1];
+			break;
+		case 4: if(numCol == 5) tlr = tolerance[posarr[4]-1];
+	}
+}
+val *= kf;
+val = Math.round(val * 1000)/1000;
+
+
+if (val >= 1e6) {
+	val /= 1e6;
+	res = val + ((numEl==1)? " МОм" : ((numEl==2)? " мкФ" : " Гн"));
+} else if (val >= 1e3) {
+	val /= 1e3;
+	res = val + " КОм";
+	res = val + ((numEl==1)? " КОм" : ((numEl==2)? " нФ" : " мГн"));
+} else res = val + ((numEl==1)? " Ом" : ((numEl==2)? " пФ" : " мкГн"));
+
+((IE)? document.all('nm1') : document.getElementById('nm1')).value = res;
+((IE)? document.all('nm2') : document.getElementById('nm2')).value = tlr;
+}
+
+</SCRIPT>
+
+<STYLE type=text/css>TD.white {
+	BACKGROUND: white
+}
+TD.gray {
+	BACKGROUND: gray
+}
+TD.violet {
+	BACKGROUND: violet
+}
+TD.blue {
+	BACKGROUND: blue
+}
+TD.green {
+	BACKGROUND: green
+}
+TD.yellow {
+	BACKGROUND: yellow
+}
+TD.orange {
+	BACKGROUND: orange
+}
+TD.red {
+	BACKGROUND: red
+}
+TD.brown {
+	BACKGROUND: brown
+}
+TD.black {
+	BACKGROUND: black
+}
+TD.goldenrod {
+	BACKGROUND: goldenrod
+}
+TD.gainsboro {
+	BACKGROUND: gainsboro
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<!-- shapka --><!-- content -->
+<TABLE id=h100 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="750" colspan="3">&nbsp;</TD>
+    </TR>
+  
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD id=name width=750>ЦВЕТОВАЯ МАРКИРОВКА РЕЗИСТОРОВ, КОНДЕНСАТОРОВ, 
+      ИНДУКТИВНОСТЕЙ</TD>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD colSpan=3 height=3>&nbsp;</TD></TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>
+      <TABLE borderColor=#d9c09c cellSpacing=0 cellPadding=0 width=750 
+        border=1><TBODY>
+        <TR height=300>
+          <TD width="40%">
+            <TABLE style="MARGIN: 20px">
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=left colSpan=2>Рассчитываемый элемент:</TD></TR>
+                    <TR>
+                      <TD align=left>Сопротивление </TD>
+                      <TD><INPUT id=ws1 onclick=javascript:chEl(this); 
+                        type=radio CHECKED name=flone></TD></TR>
+                    <TR>
+                      <TD align=left>Конденсатор </TD>
+                      <TD><INPUT id=ws2 onclick=javascript:chEl(this); 
+                        type=radio name=flone></TD></TR>
+                    <TR>
+                      <TD align=left>Индуктивность </TD>
+                      <TD><INPUT id=ws3 onclick=javascript:chEl(this); 
+                        type=radio name=flone></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=left colSpan=3>Количество полос:</TD></TR>
+                    <TR>
+                      <TD align=left>3 <INPUT onclick=javascript:chLags(this); 
+                        type=radio CHECKED name=fltwo></TD>
+                      <TD>4 <INPUT onclick=javascript:chLags(this); type=radio 
+                        name=fltwo></TD>
+                      <TD id=hw3>5 <INPUT onclick=javascript:chLags(this); 
+                        type=radio name=fltwo></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD width="117" align=left>Номинал</TD>
+                    </TR>
+                    <TR>
+                      <TD align=left><INPUT id=nm1 size=9 value="99000 МОм" 
+                        name=nm1></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=left>Допуск</TD></TR>
+                    <TR>
+                      <TD align=left><INPUT id=nm2 size=9 
+                    name=nm2></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD id=nm3 style="VISIBILITY: hidden"><B>Примечание: </B>Для 
+                  цветовой кодировки постоянных конденсаторов на практике 
+                  используется несколько методик. Здесь представлена одна из 
+                  них. </TD></TR></TBODY></TABLE></TD>
+          <TD>
+          <SCRIPT language=JavaScript1.1>
+				draw();
+				</SCRIPT>          </TD></TR></TBODY></TABLE></TD>
+    <TD>&nbsp;</TD></TR></TBODY></TABLE><!-- /content --><!-- podval --><!--<SPAN ID=podv style="POSITION: absolute; BOTTOM: 0; LEFT: 0; width:100%; VISIBILITY: visible">-->
+<SPAN 
+id=podv style="VISIBILITY: visible; WIDTH: 100%"> </SPAN>
+<SCRIPT>
+drawres();
+</SCRIPT>
+
+<SCRIPT>if(NS || IE || DOM) action = window.setInterval("Interval()",1);</SCRIPT>
+</BODY></HTML>
