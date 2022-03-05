@@ -1,0 +1,168 @@
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; SCROLLBAR-FACE-COLOR: #e9e4d0; BACKGROUND: #e9e4d0; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+EM {
+	FONT: bold 12px tahoma, verdana, sans-serif
+}
+H4 {
+	FONT-WEIGHT: bold; MARGIN: 0px; TEXT-ALIGN: justify
+}
+H5 {
+	DISPLAY: inline; FONT-WEIGHT: bold; MARGIN: 0px; VERTICAL-ALIGN: middle
+}
+.ec {
+	BACKGROUND: #000000; FONT: bold 10px tahoma, verdana, sans-serif; VERTICAL-ALIGN: middle; COLOR: #ffffff; TEXT-ALIGN: center
+}
+UL {
+	LIST-STYLE-TYPE: disc
+}
+#sinp {
+	WIDTH: 76px
+}
+#navig {
+	BACKGROUND: #d9c09c; FONT: bold 10px tahoma, verdana, sans-serif; VERTICAL-ALIGN: middle; COLOR: #000; HEIGHT: 18px; TEXT-ALIGN: center
+}
+#navig A:link {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000; TEXT-DECORATION: none
+}
+#podv A:link {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000; TEXT-DECORATION: none
+}
+#navig A:hover {
+	BACKGROUND: #e9e4d0; COLOR: #000; TEXT-DECORATION: none
+}
+#podv A:hover {
+	BACKGROUND: #e9e4d0; COLOR: #000; TEXT-DECORATION: none
+}
+#path {
+	BACKGROUND: #e9e4d0; FONT: 9px tahoma, verdana, sans-serif; VERTICAL-ALIGN: middle; HEIGHT: 26px; TEXT-ALIGN: left
+}
+#path A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+#path A:hover {
+	BACKGROUND: #d9c09c; COLOR: #000000; TEXT-DECORATION: none
+}
+#poisk {
+	BACKGROUND: #e9e4d0; FONT: 9px tahoma, verdana, sans-serif; VERTICAL-ALIGN: middle; HEIGHT: 26px; TEXT-ALIGN: right
+}
+#name {
+	BACKGROUND: #d9c09c; FONT: bold 12px tahoma, verdana, sans-serif; VERTICAL-ALIGN: middle; HEIGHT: 22px; TEXT-ALIGN: center
+}
+#catalog {
+	BACKGROUND: #e9e4d0; FONT: 11px tahoma, verdana, sans-serif; COLOR: #000; TEXT-DECORATION: none
+}
+#catalog A:link {
+	COLOR: #000; TEXT-DECORATION: none
+}
+#catalog A:hover {
+	FONT: 11px tahoma, verdana, sans-serif; COLOR: #000; TEXT-DECORATION: underline
+}
+.inside {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; FONT: bold 9px tahoma, verdana, sans-serif; VERTICAL-ALIGN: middle; PADDING-TOP: 0px; HEIGHT: 18px; TEXT-ALIGN: left
+}
+.topic {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+P {
+	MARGIN: 0px; FONT: 11px tahoma, verdana, sans-serif; COLOR: #000000; TEXT-ALIGN: justify
+}
+#specif {
+	MARGIN: 10px 0px 10px 10px
+}
+#bord {
+	BORDER-RIGHT: #d9c09c 1px solid; BORDER-TOP: #d9c09c 1px solid; BORDER-LEFT: #d9c09c 1px solid; BORDER-BOTTOM: #d9c09c 1px solid
+}
+#news {
+	FONT: 11px/1.8 tahoma, verdana, sans-serif; LIST-STYLE-TYPE: none
+}
+#news EM {
+	DISPLAY: block; FONT: bold 11px tahoma, verdana, sans-serif
+}
+#probel {
+	HEIGHT: 22px
+}
+#probel1 {
+	HEIGHT: 10px
+}
+#mid {
+	VERTICAL-ALIGN: middle
+}
+#ralign {
+	VERTICAL-ALIGN: middle; TEXT-ALIGN: right
+}
+#podv {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #d9c09c; PADDING-BOTTOM: 0px; FONT: 11px tahoma, verdana, sans-serif; COLOR: #000; PADDING-TOP: 4px; HEIGHT: 60px; TEXT-ALIGN: left
+}
+TABLE {
+	BACKGROUND: #e9e4d0; FONT: 11px tahoma, verdana, sans-serif; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-ALIGN: justify
+}
+TR.detal {
+	BACKGROUND: #d9c09c
+}
+#searchpos {
+	BACKGROUND: #d9c09c
+}
+TD.h100 {
+	VERTICAL-ALIGN: top; HEIGHT: 60%
+}
+TD.zag {
+	FONT: bold 9px tahoma, verdana, sans-serif; HEIGHT: 18px; TEXT-ALIGN: left
+}
+TD.nm {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+TD.opis {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+TD.sm {
+	TEXT-ALIGN: right
+}
+TD.oth {
+	TEXT-ALIGN: center
+}
+TD.reg {
+	BORDER-RIGHT: #d9c09c 0px solid; BORDER-TOP: #d9c09c 0px solid; BORDER-LEFT: #d9c09c 0px solid; BORDER-BOTTOM: #d9c09c 0px solid
+}
+TD.inp {
+	BORDER-RIGHT: #d9c09c 0px solid; BORDER-TOP: #d9c09c 0px solid; BORDER-LEFT: #d9c09c 0px solid; BORDER-BOTTOM: #d9c09c 0px solid; TEXT-ALIGN: left
+}
+TD.detal {
+	BACKGROUND: #d9c09c
+}
+#itogo {
+	FONT: bold 11px tahoma, verdana, sans-serif; TEXT-ALIGN: right
+}
+#view {
+	CURSOR: hand; TEXT-ALIGN: center
+}
+#title {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 15px; PADDING-BOTTOM: 5px; FONT: 11px tahoma, verdana, sans-serif; VERTICAL-ALIGN: top; WIDTH: 40%; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.em1 {
+	BACKGROUND: #fcedb4; MARGIN: 5px 0px 0px; WIDTH: 180px; COLOR: #000; TEXT-ALIGN: left
+}
