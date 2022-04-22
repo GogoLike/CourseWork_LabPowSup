@@ -1,0 +1,1743 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Diode_Bridge:KBU4B D?
+U 1 1 61990786
+P 6850 4700
+F 0 "D?" V 7050 5050 50  0000 L CNN
+F 1 "KBU4B" V 6950 4900 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_KBU" H 7000 4825 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/88656/kbu4.pdf" H 6850 4700 50  0001 C CNN
+	1    6850 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 5000 6850 6350
+NoConn ~ 7150 4050
+Wire Wire Line
+	6850 2650 6850 4400
+Connection ~ 8100 2650
+Wire Wire Line
+	9000 2650 8100 2650
+Wire Wire Line
+	9000 4750 9000 2650
+Wire Wire Line
+	8100 3800 8100 4700
+Connection ~ 7700 3600
+Wire Wire Line
+	7350 3600 7700 3600
+Wire Wire Line
+	7350 3750 7350 3600
+Wire Wire Line
+	7700 3600 7800 3600
+Wire Wire Line
+	7700 3900 7700 3600
+Wire Wire Line
+	7700 4700 8100 4700
+Connection ~ 7700 4700
+Wire Wire Line
+	7700 4200 7700 4700
+Wire Wire Line
+	7350 4700 7700 4700
+Connection ~ 7350 4700
+Wire Wire Line
+	7350 4350 7350 4700
+$Comp
+L Device:D_Zener_x2_KCom_AAK D?
+U 1 1 619F9BA2
+P 7350 4050
+F 0 "D?" H 7350 4267 50  0000 C CNN
+F 1 "D_Zener_x2_KCom_AAK" H 7350 4176 50  0000 C CNN
+F 2 "" H 7350 4050 50  0001 C CNN
+F 3 "~" H 7350 4050 50  0001 C CNN
+	1    7350 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619F9B9C
+P 7700 4050
+F 0 "R?" H 7770 4096 50  0000 L CNN
+F 1 "R" H 7770 4005 50  0000 L CNN
+F 2 "" V 7630 4050 50  0001 C CNN
+F 3 "~" H 7700 4050 50  0001 C CNN
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619C2F4F
+P 7100 3600
+F 0 "R?" V 7300 3550 50  0000 L CNN
+F 1 "R" V 7200 3600 50  0000 L CNN
+F 2 "" V 7030 3600 50  0001 C CNN
+F 3 "~" H 7100 3600 50  0001 C CNN
+	1    7100 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 619BDDBA
+P 9000 4900
+F 0 "C?" H 9118 4946 50  0000 L CNN
+F 1 "CP" H 9118 4855 50  0000 L CNN
+F 2 "" H 9038 4750 50  0001 C CNN
+F 3 "~" H 9000 4900 50  0001 C CNN
+	1    9000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3300 8100 3350
+Wire Wire Line
+	8100 2650 8100 2950
+Wire Wire Line
+	6850 2650 8100 2650
+$Comp
+L Device:R R?
+U 1 1 619BB952
+P 8100 3150
+F 0 "R?" H 8170 3196 50  0000 L CNN
+F 1 "R" H 8170 3105 50  0000 L CNN
+F 2 "" V 8030 3150 50  0001 C CNN
+F 3 "~" H 8100 3150 50  0001 C CNN
+	1    8100 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 4700
+Wire Wire Line
+	8100 5100 8100 5200
+Connection ~ 8100 5100
+Wire Wire Line
+	8100 4700 8100 5100
+Wire Wire Line
+	7150 4700 7250 4700
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 6199F5AE
+P 7300 5100
+F 0 "L?" V 7525 5100 50  0000 C CNN
+F 1 "L_Core_Ferrite" V 7434 5100 50  0000 C CNN
+F 2 "" H 7300 5100 50  0001 C CNN
+F 3 "~" H 7300 5100 50  0001 C CNN
+	1    7300 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:STB33N65M2 Q?
+U 1 1 6198F569
+P 8000 3600
+F 0 "Q?" H 8205 3646 50  0000 L CNN
+F 1 "STB33N65M2" H 8205 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 8200 3525 50  0001 L CIN
+F 3 "https://www.st.com/resource/en/datasheet/stb33n65m2.pdf" H 8000 3600 50  0001 L CNN
+	1    8000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3600 7350 3600
+Connection ~ 7350 3600
+$Comp
+L Device:L_Core_Ferrite_Coupled L?
+U 1 1 61A29258
+P 4300 4900
+F 0 "L?" H 4300 5181 50  0000 C CNN
+F 1 "L_Core_Ferrite_Coupled" H 4300 5090 50  0000 C CNN
+F 2 "" H 4300 4900 50  0001 C CNN
+F 3 "~" H 4300 4900 50  0001 C CNN
+	1    4300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A2F67C
+P 5400 4900
+F 0 "C?" H 5515 4946 50  0000 L CNN
+F 1 "C" H 5515 4855 50  0000 L CNN
+F 2 "" H 5438 4750 50  0001 C CNN
+F 3 "~" H 5400 4900 50  0001 C CNN
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A316D7
+P 5000 4700
+F 0 "C?" H 5115 4746 50  0000 L CNN
+F 1 "C" H 5115 4655 50  0000 L CNN
+F 2 "" H 5038 4550 50  0001 C CNN
+F 3 "~" H 5000 4700 50  0001 C CNN
+	1    5000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A32353
+P 5000 5100
+F 0 "C?" H 5115 5146 50  0000 L CNN
+F 1 "C" H 5115 5055 50  0000 L CNN
+F 2 "" H 5038 4950 50  0001 C CNN
+F 3 "~" H 5000 5100 50  0001 C CNN
+	1    5000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4800 4800 4800
+Wire Wire Line
+	4800 4800 4800 4450
+Wire Wire Line
+	4800 4450 5000 4450
+Wire Wire Line
+	4500 5000 4800 5000
+Wire Wire Line
+	4800 5000 4800 5350
+Wire Wire Line
+	4800 5350 5000 5350
+Wire Wire Line
+	5000 5350 5000 5250
+Wire Wire Line
+	5000 4450 5000 4550
+Wire Wire Line
+	5000 4450 5400 4450
+Connection ~ 5000 4450
+Wire Wire Line
+	5400 5350 5000 5350
+Connection ~ 5000 5350
+Wire Wire Line
+	5000 4950 5000 4900
+Wire Wire Line
+	5000 4900 4700 4900
+Connection ~ 5000 4900
+Wire Wire Line
+	5000 4900 5000 4850
+$Comp
+L Device:C C?
+U 1 1 61A4D861
+P 3200 4900
+F 0 "C?" H 3315 4946 50  0000 L CNN
+F 1 "C" H 3315 4855 50  0000 L CNN
+F 2 "" H 3238 4750 50  0001 C CNN
+F 3 "~" H 3200 4900 50  0001 C CNN
+	1    3200 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A4D867
+P 3600 4700
+F 0 "C?" H 3715 4746 50  0000 L CNN
+F 1 "C" H 3715 4655 50  0000 L CNN
+F 2 "" H 3638 4550 50  0001 C CNN
+F 3 "~" H 3600 4700 50  0001 C CNN
+	1    3600 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A4D86D
+P 3600 5100
+F 0 "C?" H 3715 5146 50  0000 L CNN
+F 1 "C" H 3715 5055 50  0000 L CNN
+F 2 "" H 3638 4950 50  0001 C CNN
+F 3 "~" H 3600 5100 50  0001 C CNN
+	1    3600 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4800 3800 4800
+Wire Wire Line
+	3800 4800 3800 4450
+Wire Wire Line
+	3800 4450 3600 4450
+Wire Wire Line
+	4100 5000 3800 5000
+Wire Wire Line
+	3800 5000 3800 5350
+Wire Wire Line
+	3800 5350 3600 5350
+Wire Wire Line
+	3600 5350 3600 5250
+Wire Wire Line
+	3600 4450 3600 4550
+Wire Wire Line
+	3600 4450 3200 4450
+Connection ~ 3600 4450
+Wire Wire Line
+	3200 5100 3200 5050
+Wire Wire Line
+	3200 5100 3200 5350
+Wire Wire Line
+	3200 5350 3600 5350
+Connection ~ 3200 5100
+Connection ~ 3600 5350
+Wire Wire Line
+	3600 4950 3600 4900
+Wire Wire Line
+	3600 4900 3900 4900
+Connection ~ 3600 4900
+Wire Wire Line
+	3600 4900 3600 4850
+$Comp
+L Amplifier_Current:ZXCT1009F U?
+U 1 1 61A67210
+P 8500 3150
+F 0 "U?" V 8900 3100 50  0000 L CNN
+F 1 "ZXCT1009F" V 8800 2950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 3150 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ZXCT1009.pdf" H 8450 3150 50  0001 C CNN
+	1    8500 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 3350 8100 3350
+Connection ~ 8100 3350
+Wire Wire Line
+	8100 3350 8100 3400
+Wire Wire Line
+	8300 2950 8100 2950
+Connection ~ 8100 2950
+Wire Wire Line
+	8100 2950 8100 3000
+Wire Wire Line
+	8700 3150 8800 3150
+Wire Wire Line
+	9000 2650 9300 2650
+Connection ~ 9000 2650
+Wire Wire Line
+	9300 5300 9300 2650
+Connection ~ 9300 2650
+Wire Wire Line
+	9300 2650 9350 2650
+Wire Wire Line
+	5850 6950 5850 6800
+Wire Wire Line
+	2250 7350 2250 7750
+Wire Wire Line
+	1350 6450 1250 6450
+Connection ~ 5850 6450
+Wire Wire Line
+	5850 6450 5850 5950
+Wire Wire Line
+	5850 6450 5850 6500
+Wire Wire Line
+	1500 6050 1350 6050
+Wire Wire Line
+	2350 7550 2350 8050
+Wire Wire Line
+	2400 7550 2350 7550
+Wire Wire Line
+	1900 6550 1250 6550
+Wire Wire Line
+	2200 5750 2900 5750
+Connection ~ 2200 5750
+Wire Wire Line
+	2200 6350 2200 5750
+Wire Wire Line
+	1800 5750 2200 5750
+Wire Wire Line
+	1800 5850 1800 5750
+Wire Wire Line
+	1800 7050 1800 6450
+Wire Wire Line
+	2200 7050 2200 6950
+Wire Wire Line
+	5000 7050 5000 7250
+Wire Wire Line
+	5150 7050 5000 7050
+Wire Wire Line
+	2100 6150 2750 6150
+Wire Wire Line
+	4850 6850 4850 6650
+Wire Wire Line
+	5150 6850 4850 6850
+Wire Wire Line
+	5750 6950 5850 6950
+Wire Wire Line
+	5000 6450 5150 6450
+Wire Wire Line
+	5000 5950 5000 6450
+Wire Wire Line
+	5100 5950 5000 5950
+Wire Wire Line
+	5500 5950 5400 5950
+Wire Wire Line
+	5850 5950 5800 5950
+Wire Wire Line
+	5750 6450 5850 6450
+$Comp
+L Device:D D?
+U 1 1 61B5E324
+P 5250 5950
+F 0 "D?" H 5250 6167 50  0000 C CNN
+F 1 "D" H 5250 6076 50  0000 C CNN
+F 2 "" H 5250 5950 50  0001 C CNN
+F 3 "~" H 5250 5950 50  0001 C CNN
+	1    5250 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B63E2F
+P 5650 5950
+F 0 "R?" V 5850 5900 50  0000 L CNN
+F 1 "R" V 5750 5950 50  0000 L CNN
+F 2 "" V 5580 5950 50  0001 C CNN
+F 3 "~" H 5650 5950 50  0001 C CNN
+	1    5650 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Isolator:H11L1 U?
+U 1 1 61B55A1B
+P 2200 6650
+F 0 "U?" H 2450 6900 50  0000 L CNN
+F 1 "H11L1" H 2450 6800 50  0000 L CNN
+F 2 "" H 2110 6650 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/H11L3M-D.PDF" H 2110 6650 50  0001 C CNN
+	1    2200 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_FET:FAN7842 U?
+U 1 1 61B3E754
+P 5450 6750
+F 0 "U?" H 5450 7317 50  0000 C CNN
+F 1 "FAN7842" H 5450 7226 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5450 6250 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/FAN7842-D.pdf" H 5450 6750 50  0001 C CNN
+	1    5450 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:H11L1 U?
+U 1 1 61B0BA4B
+P 2700 7450
+F 0 "U?" H 2750 7800 50  0000 L CNN
+F 1 "H11L1" H 2750 7700 50  0000 L CNN
+F 2 "" H 2610 7450 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/H11L3M-D.PDF" H 2610 7450 50  0001 C CNN
+	1    2700 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Varistor RV?
+U 1 1 61C421D6
+P 2400 4900
+F 0 "RV?" H 2503 4946 50  0000 L CNN
+F 1 "Varistor" H 2503 4855 50  0000 L CNN
+F 2 "" V 2330 4900 50  0001 C CNN
+F 3 "~" H 2400 4900 50  0001 C CNN
+	1    2400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_WallSocket_Earth J?
+U 1 1 61C47951
+P 1600 5000
+F 0 "J?" H 1750 5450 50  0000 L CNN
+F 1 "Conn_WallSocket_Earth" H 1400 5350 50  0000 L CNN
+F 2 "" H 1300 5100 50  0001 C CNN
+F 3 "~" H 1300 5100 50  0001 C CNN
+	1    1600 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 61C54844
+P 2800 4700
+F 0 "TH?" V 2510 4700 50  0000 C CNN
+F 1 "Thermistor_NTC" V 2601 4700 50  0000 C CNN
+F 2 "" H 2800 4750 50  0001 C CNN
+F 3 "~" H 2800 4750 50  0001 C CNN
+	1    2800 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-12xD K?
+U 1 1 61C5753F
+P 2800 4050
+F 0 "K?" V 2200 4000 50  0000 L CNN
+F 1 "DIPxx-1Axx-12xD" V 2300 3700 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3150 4000 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2800 4050 50  0001 C CNN
+	1    2800 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4450 3200 4700
+Wire Wire Line
+	3200 4450 3200 4250
+Wire Wire Line
+	3200 4250 3100 4250
+Connection ~ 3200 4450
+Wire Wire Line
+	2950 4700 3200 4700
+Connection ~ 3200 4700
+Wire Wire Line
+	3200 4700 3200 4750
+Wire Wire Line
+	2500 4250 2400 4250
+Wire Wire Line
+	2400 4250 2400 4700
+Wire Wire Line
+	2400 4700 2650 4700
+Wire Wire Line
+	2400 4750 2400 4700
+Connection ~ 2400 4700
+Wire Wire Line
+	2400 5100 2400 5050
+Wire Wire Line
+	2400 5100 3200 5100
+$Comp
+L Device:Fuse F?
+U 1 1 61CC07F1
+P 2150 4700
+F 0 "F?" V 1953 4700 50  0000 C CNN
+F 1 "Fuse" V 2044 4700 50  0000 C CNN
+F 2 "" V 2080 4700 50  0001 C CNN
+F 3 "~" H 2150 4700 50  0001 C CNN
+	1    2150 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 4700 2300 4700
+Wire Wire Line
+	2000 4700 1900 4700
+Wire Wire Line
+	1900 4700 1900 4800
+Wire Wire Line
+	1900 4800 1800 4800
+Wire Wire Line
+	1800 5000 1900 5000
+Wire Wire Line
+	1900 5000 1900 5100
+Wire Wire Line
+	1900 5100 2400 5100
+Connection ~ 2400 5100
+Wire Wire Line
+	1800 5200 1900 5200
+Wire Wire Line
+	1900 5200 1900 5450
+Wire Wire Line
+	1900 5450 3900 5450
+Wire Wire Line
+	3900 4900 3900 5450
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 61CF9924
+P 4300 5450
+F 0 "L?" V 4525 5450 50  0000 C CNN
+F 1 "L_Core_Ferrite" V 4434 5450 50  0000 C CNN
+F 2 "" H 4300 5450 50  0001 C CNN
+F 3 "~" H 4300 5450 50  0001 C CNN
+	1    4300 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 5450 4150 5450
+Connection ~ 3900 5450
+Wire Wire Line
+	4450 5450 4700 5450
+Wire Wire Line
+	4700 4900 4700 5450
+Wire Wire Line
+	5750 7050 6450 7050
+Wire Wire Line
+	6450 5400 6450 7050
+Wire Wire Line
+	5750 6850 6250 6850
+Wire Wire Line
+	6250 3600 6250 6850
+Wire Wire Line
+	8100 5100 7450 5100
+Wire Wire Line
+	9300 5650 9300 5600
+Connection ~ 9300 5650
+Wire Wire Line
+	9100 5650 9100 6450
+Wire Wire Line
+	9300 5650 9100 5650
+Wire Wire Line
+	9300 5700 9300 5650
+$Comp
+L Device:R R?
+U 1 1 61AEC39C
+P 9300 5450
+F 0 "R?" H 9370 5496 50  0000 L CNN
+F 1 "R" H 9370 5405 50  0000 L CNN
+F 2 "" V 9230 5450 50  0001 C CNN
+F 3 "~" H 9300 5450 50  0001 C CNN
+	1    9300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 6350 9350 6350
+Connection ~ 9300 6350
+$Comp
+L Device:R R?
+U 1 1 61AD8AD9
+P 9300 5850
+F 0 "R?" H 9370 5896 50  0000 L CNN
+F 1 "R" H 9370 5805 50  0000 L CNN
+F 2 "" V 9230 5850 50  0001 C CNN
+F 3 "~" H 9300 5850 50  0001 C CNN
+	1    9300 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 6000 9300 6350
+Connection ~ 9000 6350
+Wire Wire Line
+	9000 6350 9300 6350
+Wire Wire Line
+	8800 5650 8800 5700
+Connection ~ 8800 5650
+Wire Wire Line
+	8800 5650 8500 5650
+Wire Wire Line
+	8100 5650 8100 5600
+Connection ~ 8100 5650
+Wire Wire Line
+	8100 5650 8400 5650
+Wire Wire Line
+	8100 6350 8800 6350
+Wire Wire Line
+	8800 6350 9000 6350
+Connection ~ 8800 6350
+Wire Wire Line
+	8800 3150 8800 5650
+$Comp
+L Device:R R?
+U 1 1 61A982A1
+P 8800 5850
+F 0 "R?" H 8870 5896 50  0000 L CNN
+F 1 "R" H 8870 5805 50  0000 L CNN
+F 2 "" V 8730 5850 50  0001 C CNN
+F 3 "~" H 8800 5850 50  0001 C CNN
+	1    8800 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 6000 8800 6350
+Connection ~ 7350 5400
+Wire Wire Line
+	7350 5400 7250 5400
+$Comp
+L Device:R R?
+U 1 1 61A206C9
+P 7100 5400
+F 0 "R?" V 7300 5350 50  0000 L CNN
+F 1 "R" V 7200 5400 50  0000 L CNN
+F 2 "" V 7030 5400 50  0001 C CNN
+F 3 "~" H 7100 5400 50  0001 C CNN
+	1    7100 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:STB33N65M2 Q?
+U 1 1 6198CECC
+P 8000 5400
+F 0 "Q?" H 8205 5446 50  0000 L CNN
+F 1 "STB33N65M2" H 8205 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 8200 5325 50  0001 L CIN
+F 3 "https://www.st.com/resource/en/datasheet/stb33n65m2.pdf" H 8000 5400 50  0001 L CNN
+	1    8000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619B9E67
+P 8100 5850
+F 0 "R?" H 8170 5896 50  0000 L CNN
+F 1 "R" H 8170 5805 50  0000 L CNN
+F 2 "" V 8030 5850 50  0001 C CNN
+F 3 "~" H 8100 5850 50  0001 C CNN
+	1    8100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 6000 8100 6350
+Wire Wire Line
+	8100 6350 7700 6350
+Wire Wire Line
+	8100 5700 8100 5650
+$Comp
+L Device:R R?
+U 1 1 619C161E
+P 7700 5850
+F 0 "R?" H 7770 5896 50  0000 L CNN
+F 1 "R" H 7770 5805 50  0000 L CNN
+F 2 "" V 7630 5850 50  0001 C CNN
+F 3 "~" H 7700 5850 50  0001 C CNN
+	1    7700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener_x2_KCom_AAK D?
+U 1 1 619DC0D5
+P 7350 5850
+F 0 "D?" H 7350 6067 50  0000 C CNN
+F 1 "D_Zener_x2_KCom_AAK" H 7350 5976 50  0000 C CNN
+F 2 "" H 7350 5850 50  0001 C CNN
+F 3 "~" H 7350 5850 50  0001 C CNN
+	1    7350 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 6150 7350 6350
+Connection ~ 7350 6350
+Wire Wire Line
+	7350 6350 6850 6350
+Wire Wire Line
+	7700 6000 7700 6350
+Connection ~ 7700 6350
+Wire Wire Line
+	7700 6350 7350 6350
+Wire Wire Line
+	7700 5700 7700 5400
+Wire Wire Line
+	7700 5400 7800 5400
+Wire Wire Line
+	7350 5550 7350 5400
+Wire Wire Line
+	7350 5400 7700 5400
+Connection ~ 7700 5400
+Wire Wire Line
+	9000 6350 9000 5050
+Connection ~ 8100 6350
+NoConn ~ 7150 5850
+Wire Wire Line
+	6450 5400 6950 5400
+Wire Wire Line
+	5950 4700 6550 4700
+Wire Wire Line
+	5950 5100 7150 5100
+Wire Wire Line
+	6250 3600 6950 3600
+Wire Wire Line
+	5850 6950 6350 6950
+Wire Wire Line
+	6350 6950 6350 4300
+Wire Wire Line
+	6350 4300 7250 4300
+Wire Wire Line
+	7250 4300 7250 4700
+Connection ~ 5850 6950
+Connection ~ 7250 4700
+Wire Wire Line
+	7250 4700 7350 4700
+Wire Wire Line
+	5400 5050 5400 5350
+Wire Wire Line
+	5400 4450 5400 4750
+$Comp
+L Device:R R?
+U 1 1 61E076D3
+P 5700 4700
+F 0 "R?" H 5770 4746 50  0000 L CNN
+F 1 "R" H 5770 4655 50  0000 L CNN
+F 2 "" V 5630 4700 50  0001 C CNN
+F 3 "~" H 5700 4700 50  0001 C CNN
+	1    5700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E186D5
+P 5700 5100
+F 0 "R?" H 5770 5146 50  0000 L CNN
+F 1 "R" H 5770 5055 50  0000 L CNN
+F 2 "" V 5630 5100 50  0001 C CNN
+F 3 "~" H 5700 5100 50  0001 C CNN
+	1    5700 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4450 5700 4450
+Wire Wire Line
+	5700 4450 5700 4550
+Connection ~ 5400 4450
+Wire Wire Line
+	5400 5350 5700 5350
+Wire Wire Line
+	5700 5350 5700 5250
+Connection ~ 5400 5350
+Wire Wire Line
+	5700 4950 5700 4900
+Wire Wire Line
+	5700 4450 5950 4450
+Wire Wire Line
+	5950 4450 5950 4700
+Connection ~ 5700 4450
+Wire Wire Line
+	5700 5350 5950 5350
+Wire Wire Line
+	5950 5350 5950 5100
+Connection ~ 5700 5350
+Wire Wire Line
+	5700 4900 6050 4900
+Wire Wire Line
+	6050 4900 6050 6450
+Wire Wire Line
+	6050 6450 8300 6450
+Wire Wire Line
+	8300 6450 8300 6600
+Connection ~ 5700 4900
+Wire Wire Line
+	5700 4900 5700 4850
+Wire Wire Line
+	8400 5650 8400 6600
+Wire Wire Line
+	8500 5650 8500 6600
+Wire Wire Line
+	9100 6450 8600 6450
+Wire Wire Line
+	8600 6450 8600 6600
+$Comp
+L Device:C C?
+U 1 1 61E80770
+P 5000 6650
+F 0 "C?" H 5115 6696 50  0000 L CNN
+F 1 "C" H 5115 6605 50  0000 L CNN
+F 2 "" H 5038 6500 50  0001 C CNN
+F 3 "~" H 5000 6650 50  0001 C CNN
+	1    5000 6650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 5950
+Wire Wire Line
+	5000 6450 5000 6500
+Connection ~ 5000 6450
+Wire Wire Line
+	5000 6800 5000 7050
+Connection ~ 5000 7050
+$Comp
+L Device:CP C?
+U 1 1 61F0538B
+P 5850 6650
+F 0 "C?" H 5968 6696 50  0000 L CNN
+F 1 "CP" H 5968 6605 50  0000 L CNN
+F 2 "" H 5888 6500 50  0001 C CNN
+F 3 "~" H 5850 6650 50  0001 C CNN
+	1    5850 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15600 2750 15600 3050
+Wire Wire Line
+	15800 3050 15600 3050
+Connection ~ 15600 3050
+Wire Wire Line
+	15600 3050 15600 3100
+Wire Wire Line
+	15600 2750 16600 2750
+Wire Wire Line
+	16600 2750 16600 3100
+Wire Wire Line
+	15600 4600 17100 4600
+Wire Wire Line
+	17000 4200 17100 4200
+Wire Wire Line
+	16600 4200 16600 3400
+Connection ~ 16600 4200
+Wire Wire Line
+	16700 4200 16600 4200
+$Comp
+L Device:C C?
+U 1 1 621E09E5
+P 16850 4200
+F 0 "C?" V 17050 4050 50  0000 L CNN
+F 1 "C" V 16950 4050 50  0000 L CNN
+F 2 "" H 16888 4050 50  0001 C CNN
+F 3 "~" H 16850 4200 50  0001 C CNN
+	1    16850 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	17500 4450 17500 4400
+Connection ~ 17500 4450
+Wire Wire Line
+	17500 4500 17500 4450
+Wire Wire Line
+	17350 3700 17500 3700
+Wire Wire Line
+	17350 5200 17500 5200
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 6213E466
+P 17350 3850
+F 0 "L?" H 17550 4000 50  0000 R CNN
+F 1 "L_Core_Ferrite" H 18000 3900 50  0000 R CNN
+F 2 "" H 17350 3850 50  0001 C CNN
+F 3 "~" H 17350 3850 50  0001 C CNN
+	1    17350 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 6213AB62
+P 17350 5050
+F 0 "L?" H 17550 5200 50  0000 R CNN
+F 1 "L_Core_Ferrite" H 18000 5100 50  0000 R CNN
+F 2 "" H 17350 5050 50  0001 C CNN
+F 3 "~" H 17350 5050 50  0001 C CNN
+	1    17350 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transformer:TEZ16.0-D-2 TR?
+U 1 1 62138A56
+P 17300 4400
+F 0 "TR?" H 17000 4450 50  0000 C CNN
+F 1 "TEZ16.0-D-2" H 16950 4350 50  0000 C CNN
+F 2 "Transformer_THT:Transformer_Breve_TEZ-47x57" H 17300 3850 50  0001 C CIN
+F 3 "http://www.breve.pl/pdf/ANG/TEZ_ang.pdf" H 17300 4400 50  0001 C CNN
+	1    17300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16600 5200 16600 4200
+Wire Wire Line
+	16600 5500 16600 5850
+$Comp
+L Device:C C?
+U 1 1 620EFAD7
+P 16600 3250
+F 0 "C?" H 16715 3296 50  0000 L CNN
+F 1 "C" H 16715 3205 50  0000 L CNN
+F 2 "" H 16638 3100 50  0001 C CNN
+F 3 "~" H 16600 3250 50  0001 C CNN
+	1    16600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 620DD022
+P 16600 5350
+F 0 "C?" H 16715 5396 50  0000 L CNN
+F 1 "C" H 16715 5305 50  0000 L CNN
+F 2 "" H 16638 5200 50  0001 C CNN
+F 3 "~" H 16600 5350 50  0001 C CNN
+	1    16600 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 16300 5150
+Wire Wire Line
+	16300 3250 16300 5150
+Connection ~ 15600 4600
+Wire Wire Line
+	15600 4700 15600 4600
+Wire Wire Line
+	16300 5850 16600 5850
+Wire Wire Line
+	16000 5150 16000 6100
+Wire Wire Line
+	15900 5150 15900 6100
+NoConn ~ 14650 5350
+Connection ~ 15600 5850
+Connection ~ 15200 4900
+Wire Wire Line
+	14850 4900 15200 4900
+Wire Wire Line
+	14850 5050 14850 4900
+Wire Wire Line
+	15200 4900 15300 4900
+Wire Wire Line
+	15200 5200 15200 4900
+Wire Wire Line
+	15200 5850 14850 5850
+Connection ~ 15200 5850
+Wire Wire Line
+	15200 5500 15200 5850
+Connection ~ 14850 5850
+Wire Wire Line
+	14850 5650 14850 5850
+$Comp
+L Device:D_Zener_x2_KCom_AAK D?
+U 1 1 61F54502
+P 14850 5350
+F 0 "D?" H 14850 5567 50  0000 C CNN
+F 1 "D_Zener_x2_KCom_AAK" H 14850 5476 50  0000 C CNN
+F 2 "" H 14850 5350 50  0001 C CNN
+F 3 "~" H 14850 5350 50  0001 C CNN
+	1    14850 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F544FC
+P 15200 5350
+F 0 "R?" H 15270 5396 50  0000 L CNN
+F 1 "R" H 15270 5305 50  0000 L CNN
+F 2 "" V 15130 5350 50  0001 C CNN
+F 3 "~" H 15200 5350 50  0001 C CNN
+	1    15200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15600 5200 15600 5150
+Wire Wire Line
+	15600 5850 15200 5850
+Wire Wire Line
+	15600 5500 15600 5850
+$Comp
+L Device:R R?
+U 1 1 61F544F3
+P 15600 5350
+F 0 "R?" H 15670 5396 50  0000 L CNN
+F 1 "R" H 15670 5305 50  0000 L CNN
+F 2 "" V 15530 5350 50  0001 C CNN
+F 3 "~" H 15600 5350 50  0001 C CNN
+	1    15600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:STB33N65M2 Q?
+U 1 1 61F544ED
+P 15500 4900
+F 0 "Q?" H 15705 4946 50  0000 L CNN
+F 1 "STB33N65M2" H 15705 4855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 15700 4825 50  0001 L CIN
+F 3 "https://www.st.com/resource/en/datasheet/stb33n65m2.pdf" H 15500 4900 50  0001 L CNN
+	1    15500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F544E7
+P 14600 4900
+F 0 "R?" V 14800 4850 50  0000 L CNN
+F 1 "R" V 14700 4900 50  0000 L CNN
+F 2 "" V 14530 4900 50  0001 C CNN
+F 3 "~" H 14600 4900 50  0001 C CNN
+	1    14600 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14850 4900 14750 4900
+Connection ~ 14850 4900
+Wire Wire Line
+	16300 5500 16300 5850
+$Comp
+L Device:R R?
+U 1 1 61F544DE
+P 16300 5350
+F 0 "R?" H 16370 5396 50  0000 L CNN
+F 1 "R" H 16370 5305 50  0000 L CNN
+F 2 "" V 16230 5350 50  0001 C CNN
+F 3 "~" H 16300 5350 50  0001 C CNN
+	1    16300 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 16300 5850
+Wire Wire Line
+	15600 5850 16300 5850
+Wire Wire Line
+	15600 5150 15900 5150
+Connection ~ 15600 5150
+Wire Wire Line
+	15600 5150 15600 5100
+Wire Wire Line
+	16300 5150 16000 5150
+Wire Wire Line
+	16300 5150 16300 5200
+$Comp
+L Device:R R?
+U 1 1 61F544CB
+P 21650 4800
+F 0 "R?" H 21720 4846 50  0000 L CNN
+F 1 "R" H 21720 4755 50  0000 L CNN
+F 2 "" V 21580 4800 50  0001 C CNN
+F 3 "~" H 21650 4800 50  0001 C CNN
+	1    21650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F544C3
+P 21650 4400
+F 0 "R?" H 21720 4446 50  0000 L CNN
+F 1 "R" H 21720 4355 50  0000 L CNN
+F 2 "" V 21580 4400 50  0001 C CNN
+F 3 "~" H 21650 4400 50  0001 C CNN
+	1    21650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21650 4650 21650 4600
+Wire Wire Line
+	21650 4600 21450 4600
+Wire Wire Line
+	21450 4600 21450 5150
+Connection ~ 21650 4600
+Wire Wire Line
+	21650 4600 21650 4550
+Wire Wire Line
+	16200 3250 16300 3250
+Wire Wire Line
+	15600 3450 15600 3500
+Connection ~ 15600 3450
+Wire Wire Line
+	15800 3450 15600 3450
+$Comp
+L Amplifier_Current:ZXCT1009F U?
+U 1 1 61F544AF
+P 16000 3250
+F 0 "U?" V 16400 3200 50  0000 L CNN
+F 1 "ZXCT1009F" V 16300 3050 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 16000 3250 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ZXCT1009.pdf" H 15950 3250 50  0001 C CNN
+	1    16000 3250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 14850 3700
+Wire Wire Line
+	14750 3700 14850 3700
+$Comp
+L Transistor_FET:STB33N65M2 Q?
+U 1 1 61F544A7
+P 15500 3700
+F 0 "Q?" H 15705 3746 50  0000 L CNN
+F 1 "STB33N65M2" H 15705 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 15700 3625 50  0001 L CIN
+F 3 "https://www.st.com/resource/en/datasheet/stb33n65m2.pdf" H 15500 3700 50  0001 L CNN
+	1    15500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F54496
+P 15600 3250
+F 0 "R?" H 15670 3296 50  0000 L CNN
+F 1 "R" H 15670 3205 50  0000 L CNN
+F 2 "" V 15530 3250 50  0001 C CNN
+F 3 "~" H 15600 3250 50  0001 C CNN
+	1    15600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15600 3400 15600 3450
+$Comp
+L Device:R R?
+U 1 1 61F54488
+P 14600 3700
+F 0 "R?" V 14800 3650 50  0000 L CNN
+F 1 "R" V 14700 3700 50  0000 L CNN
+F 2 "" V 14530 3700 50  0001 C CNN
+F 3 "~" H 14600 3700 50  0001 C CNN
+	1    14600 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F54482
+P 15200 4150
+F 0 "R?" H 15270 4196 50  0000 L CNN
+F 1 "R" H 15270 4105 50  0000 L CNN
+F 2 "" V 15130 4150 50  0001 C CNN
+F 3 "~" H 15200 4150 50  0001 C CNN
+	1    15200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener_x2_KCom_AAK D?
+U 1 1 61F5447C
+P 14850 4150
+F 0 "D?" H 14850 4367 50  0000 C CNN
+F 1 "D_Zener_x2_KCom_AAK" H 14850 4276 50  0000 C CNN
+F 2 "" H 14850 4150 50  0001 C CNN
+F 3 "~" H 14850 4150 50  0001 C CNN
+	1    14850 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14850 4450 14850 4600
+Wire Wire Line
+	14850 4600 15200 4600
+Wire Wire Line
+	15200 4300 15200 4600
+Connection ~ 15200 4600
+Wire Wire Line
+	15200 4600 15600 4600
+Wire Wire Line
+	15200 4000 15200 3700
+Wire Wire Line
+	15200 3700 15300 3700
+Wire Wire Line
+	14850 3850 14850 3700
+Wire Wire Line
+	14850 3700 15200 3700
+Connection ~ 15200 3700
+Wire Wire Line
+	15600 3900 15600 4600
+NoConn ~ 14650 4150
+Wire Wire Line
+	14450 3700 14350 3700
+Wire Wire Line
+	14350 3700 14350 4500
+Connection ~ 12500 5000
+Wire Wire Line
+	13200 5000 12500 5000
+Wire Wire Line
+	12500 5000 12100 5000
+$Comp
+L Device:CP C?
+U 1 1 61FB2D54
+P 14050 4300
+F 0 "C?" H 14168 4346 50  0000 L CNN
+F 1 "CP" H 14168 4255 50  0000 L CNN
+F 2 "" H 14088 4150 50  0001 C CNN
+F 3 "~" H 14050 4300 50  0001 C CNN
+	1    14050 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 13200 4700
+Wire Wire Line
+	13200 4450 13200 4700
+Connection ~ 13200 4100
+Wire Wire Line
+	13200 4100 13200 4150
+Connection ~ 13200 3700
+$Comp
+L Device:C C?
+U 1 1 61FB2D49
+P 13200 4300
+F 0 "C?" H 13315 4346 50  0000 L CNN
+F 1 "C" H 13315 4255 50  0000 L CNN
+F 2 "" H 13238 4150 50  0001 C CNN
+F 3 "~" H 13200 4300 50  0001 C CNN
+	1    13200 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 14050 4600
+$Comp
+L Isolator:H11L1 U?
+U 1 1 61FB2D3F
+P 12100 4100
+F 0 "U?" H 12150 4450 50  0000 L CNN
+F 1 "H11L1" H 12150 4350 50  0000 L CNN
+F 2 "" H 12010 4100 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/H11L3M-D.PDF" H 12010 4100 50  0001 C CNN
+	1    12100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_FET:FAN7842 U?
+U 1 1 61FB2D39
+P 13650 4400
+F 0 "U?" H 13650 4967 50  0000 C CNN
+F 1 "FAN7842" H 13650 4876 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13650 3900 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/FAN7842-D.pdf" H 13650 4400 50  0001 C CNN
+	1    13650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:H11L1 U?
+U 1 1 61FB2D33
+P 12500 4600
+F 0 "U?" H 12750 4850 50  0000 L CNN
+F 1 "H11L1" H 12750 4750 50  0000 L CNN
+F 2 "" H 12410 4600 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/H11L3M-D.PDF" H 12410 4600 50  0001 C CNN
+	1    12500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61FB2D2D
+P 13850 3700
+F 0 "R?" V 14050 3650 50  0000 L CNN
+F 1 "R" V 13950 3700 50  0000 L CNN
+F 2 "" V 13780 3700 50  0001 C CNN
+F 3 "~" H 13850 3700 50  0001 C CNN
+	1    13850 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 61FB2D27
+P 13450 3700
+F 0 "D?" H 13450 3917 50  0000 C CNN
+F 1 "D" H 13450 3826 50  0000 C CNN
+F 2 "" H 13450 3700 50  0001 C CNN
+F 3 "~" H 13450 3700 50  0001 C CNN
+	1    13450 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 4100 14050 4100
+Wire Wire Line
+	14050 3700 14000 3700
+Wire Wire Line
+	13700 3700 13600 3700
+Wire Wire Line
+	13300 3700 13200 3700
+Wire Wire Line
+	13200 3700 13200 4100
+Wire Wire Line
+	13200 4100 13350 4100
+Wire Wire Line
+	13950 4600 14050 4600
+Wire Wire Line
+	13350 4500 13050 4500
+Wire Wire Line
+	13050 4500 13050 4100
+Wire Wire Line
+	12800 4600 13350 4600
+Wire Wire Line
+	12400 4100 13050 4100
+Wire Wire Line
+	13350 4700 13200 4700
+Wire Wire Line
+	13200 4700 13200 5000
+Wire Wire Line
+	12500 5000 12500 4900
+Wire Wire Line
+	12100 5000 12100 4400
+Wire Wire Line
+	12100 3800 12100 3700
+Wire Wire Line
+	12100 3700 12500 3700
+Wire Wire Line
+	12500 4300 12500 3700
+Connection ~ 12500 3700
+Wire Wire Line
+	12500 3700 13200 3700
+Wire Wire Line
+	12200 4500 11550 4500
+Wire Wire Line
+	11800 4200 11750 4200
+Wire Wire Line
+	11750 4200 11750 4700
+Wire Wire Line
+	11750 4700 12200 4700
+Wire Wire Line
+	11750 4700 11550 4700
+Connection ~ 11750 4700
+Wire Wire Line
+	11800 4000 11650 4000
+Wire Wire Line
+	14050 4100 14050 4150
+Wire Wire Line
+	14050 4100 14050 3700
+Connection ~ 14050 4100
+Wire Wire Line
+	11650 4400 11550 4400
+Wire Wire Line
+	11650 4000 11650 4400
+Wire Wire Line
+	14050 4600 14050 4450
+Wire Wire Line
+	13950 4500 14350 4500
+Wire Wire Line
+	14050 4600 14850 4600
+Connection ~ 14850 4600
+Wire Wire Line
+	14450 4900 14350 4900
+Wire Wire Line
+	14350 4900 14350 4700
+Wire Wire Line
+	13950 4700 14350 4700
+Wire Wire Line
+	13200 3700 13200 3600
+Wire Wire Line
+	13200 5000 13200 5850
+Wire Wire Line
+	13200 5850 14850 5850
+Connection ~ 13200 5000
+Wire Wire Line
+	5000 7250 6850 7250
+Wire Wire Line
+	6850 7250 6850 6350
+Connection ~ 5000 7250
+Connection ~ 6850 6350
+$Comp
+L Device:CP C?
+U 1 1 624AA28D
+P 20100 4400
+F 0 "C?" H 20218 4446 50  0000 L CNN
+F 1 "CP" H 20218 4355 50  0000 L CNN
+F 2 "" H 20138 4250 50  0001 C CNN
+F 3 "~" H 20100 4400 50  0001 C CNN
+	1    20100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5822 D?
+U 1 1 6250A30F
+P 18850 4150
+F 0 "D?" H 18850 4367 50  0000 C CNN
+F 1 "1N5822" H 18850 4276 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 18850 3975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 18850 4150 50  0001 C CNN
+	1    18850 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5822 D?
+U 1 1 6250D889
+P 19100 4400
+F 0 "D?" V 19150 4500 50  0000 C CNN
+F 1 "1N5822" V 19050 4600 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 19100 4225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 19100 4400 50  0001 C CNN
+	1    19100 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 624C9904
+P 19850 4150
+F 0 "L?" V 20075 4150 50  0000 C CNN
+F 1 "L_Core_Ferrite" V 19984 4150 50  0000 C CNN
+F 2 "" H 19850 4150 50  0001 C CNN
+F 3 "~" H 19850 4150 50  0001 C CNN
+	1    19850 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 61F5448E
+P 19600 4400
+F 0 "C?" H 19718 4446 50  0000 L CNN
+F 1 "CP" H 19718 4355 50  0000 L CNN
+F 2 "" H 19638 4250 50  0001 C CNN
+F 3 "~" H 19600 4400 50  0001 C CNN
+	1    19600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19000 4150 19100 4150
+Wire Wire Line
+	19100 4150 19100 4250
+Wire Wire Line
+	19100 4150 19600 4150
+Connection ~ 19100 4150
+Wire Wire Line
+	19600 4250 19600 4150
+Connection ~ 19600 4150
+Wire Wire Line
+	19600 4150 19700 4150
+Wire Wire Line
+	19600 4550 19600 4650
+Wire Wire Line
+	19600 4650 20100 4650
+Wire Wire Line
+	20100 4650 20100 4550
+Wire Wire Line
+	20000 4150 20100 4150
+Wire Wire Line
+	20100 4150 20100 4250
+Connection ~ 20100 4150
+Connection ~ 20100 4650
+Wire Wire Line
+	19100 4550 19100 4750
+Connection ~ 19600 4650
+$Comp
+L Relay:Fujitsu_FTR-F1C K?
+U 1 1 62707ABE
+P 18000 3950
+F 0 "K?" H 18000 4467 50  0000 C CNN
+F 1 "Fujitsu_FTR-F1C" H 18000 4376 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 17950 3550 50  0001 C CNN
+F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 18000 3950 50  0001 C CNN
+	1    18000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17500 4100 17600 4100
+Wire Wire Line
+	17600 4100 17600 4150
+Wire Wire Line
+	17600 4150 17700 4150
+Wire Wire Line
+	17600 4000 17600 3950
+Wire Wire Line
+	17600 3950 17700 3950
+Wire Wire Line
+	17350 4000 17600 4000
+Wire Wire Line
+	17500 3700 17500 3350
+Wire Wire Line
+	17500 3350 18600 3350
+Wire Wire Line
+	18600 3350 18600 4150
+Wire Wire Line
+	18300 3750 18400 3750
+Wire Wire Line
+	18400 3750 18400 3250
+Wire Wire Line
+	17700 3750 17600 3750
+Wire Wire Line
+	17600 3750 17600 3250
+Wire Wire Line
+	18300 4050 18400 4050
+Wire Wire Line
+	18400 4050 18400 3850
+Wire Wire Line
+	18400 3850 18300 3850
+Wire Wire Line
+	18300 3950 18500 3950
+Wire Wire Line
+	18500 3950 18500 4450
+Wire Wire Line
+	17500 4450 18500 4450
+Wire Wire Line
+	18300 4150 18600 4150
+$Comp
+L Relay:Fujitsu_FTR-F1C K?
+U 1 1 628B504E
+P 18000 4950
+F 0 "K?" H 18000 5467 50  0000 C CNN
+F 1 "Fujitsu_FTR-F1C" H 18000 5376 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 17950 4550 50  0001 C CNN
+F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 18000 4950 50  0001 C CNN
+	1    18000 4950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	17500 4800 17600 4800
+Wire Wire Line
+	17600 4800 17600 4750
+Wire Wire Line
+	17600 4750 17700 4750
+Wire Wire Line
+	17600 4900 17600 4950
+Wire Wire Line
+	17600 4950 17700 4950
+Wire Wire Line
+	17500 5550 18600 5550
+Wire Wire Line
+	18600 5550 18600 4750
+Wire Wire Line
+	18300 5150 18400 5150
+Wire Wire Line
+	18400 5150 18400 5650
+Wire Wire Line
+	17700 5150 17600 5150
+Wire Wire Line
+	17600 5150 17600 5650
+Wire Wire Line
+	18300 4850 18400 4850
+Wire Wire Line
+	18400 4850 18400 5050
+Wire Wire Line
+	18400 5050 18300 5050
+Wire Wire Line
+	18300 4950 18500 4950
+Wire Wire Line
+	18500 4950 18500 4450
+Wire Wire Line
+	18300 4750 18600 4750
+Connection ~ 18500 4450
+Wire Wire Line
+	17500 5200 17500 5550
+Wire Wire Line
+	17350 4900 17600 4900
+Wire Wire Line
+	18700 4150 18600 4150
+Connection ~ 18600 4150
+Wire Wire Line
+	19100 4750 18600 4750
+Connection ~ 18600 4750
+Wire Wire Line
+	18500 4450 18800 4450
+Wire Wire Line
+	18800 4450 18800 4650
+Wire Wire Line
+	18800 4650 19600 4650
+NoConn ~ 17600 5650
+NoConn ~ 18400 5650
+Wire Wire Line
+	15600 2750 11350 2750
+Connection ~ 15600 2750
+Wire Wire Line
+	13200 5850 11350 5850
+Connection ~ 13200 5850
+$Comp
+L Transistor_FET:STB33N65M2 Q?
+U 1 1 62A9BD1E
+P 20650 4400
+F 0 "Q?" H 20700 4800 50  0000 L CNN
+F 1 "STB33N65M2" H 20500 4700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 20850 4325 50  0001 L CIN
+F 3 "https://www.st.com/resource/en/datasheet/stb33n65m2.pdf" H 20650 4400 50  0001 L CNN
+	1    20650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20750 4150 20750 4200
+Wire Wire Line
+	20100 4150 20750 4150
+Wire Wire Line
+	20750 4600 20750 4650
+Wire Wire Line
+	20100 4650 20750 4650
+Wire Wire Line
+	20450 4400 20400 4400
+Wire Wire Line
+	20400 4400 20400 4750
+$Comp
+L Device:R R?
+U 1 1 62B8A4C1
+P 21000 4650
+F 0 "R?" V 21200 4600 50  0000 L CNN
+F 1 "R" V 21100 4650 50  0000 L CNN
+F 2 "" V 20930 4650 50  0001 C CNN
+F 3 "~" H 21000 4650 50  0001 C CNN
+	1    21000 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	20850 4650 20750 4650
+Connection ~ 20750 4650
+$Comp
+L Device:CP C?
+U 1 1 62C3D010
+P 21250 4400
+F 0 "C?" H 21368 4446 50  0000 L CNN
+F 1 "CP" H 21368 4355 50  0000 L CNN
+F 2 "" H 21288 4250 50  0001 C CNN
+F 3 "~" H 21250 4400 50  0001 C CNN
+	1    21250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21250 4650 21250 4550
+Wire Wire Line
+	21150 4650 21250 4650
+Wire Wire Line
+	21250 4650 21250 5050
+Wire Wire Line
+	21250 5050 21650 5050
+Wire Wire Line
+	21650 5050 21650 4950
+Connection ~ 21250 4650
+Wire Wire Line
+	21650 4250 21650 4150
+Wire Wire Line
+	21650 4150 21250 4150
+Connection ~ 20750 4150
+Wire Wire Line
+	21250 4250 21250 4150
+Connection ~ 21250 4150
+Wire Wire Line
+	21250 4150 20750 4150
+Wire Wire Line
+	20750 4650 20750 4750
+Wire Wire Line
+	21650 5050 21750 5050
+Connection ~ 21650 5050
+Wire Wire Line
+	21650 4150 21750 4150
+Connection ~ 21650 4150
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 62DD049E
+P 21950 4150
+F 0 "J?" H 22030 4192 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 22030 4101 50  0000 L CNN
+F 2 "" H 21950 4150 50  0001 C CNN
+F 3 "~" H 21950 4150 50  0001 C CNN
+	1    21950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 62DD1CDE
+P 21950 5050
+F 0 "J?" H 22030 5092 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 22030 5001 50  0000 L CNN
+F 2 "" H 21950 5050 50  0001 C CNN
+F 3 "~" H 21950 5050 50  0001 C CNN
+	1    21950 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6750 1900 6750
+Wire Wire Line
+	3900 7250 4200 7250
+Wire Wire Line
+	4100 6350 4200 6350
+Wire Wire Line
+	4200 6450 4200 6350
+Wire Wire Line
+	4100 6450 4200 6450
+$Comp
+L Device:C C?
+U 1 1 61D314DD
+P 4350 7000
+F 0 "C?" H 4465 7046 50  0000 L CNN
+F 1 "C" H 4465 6955 50  0000 L CNN
+F 2 "" H 4388 6850 50  0001 C CNN
+F 3 "~" H 4350 7000 50  0001 C CNN
+	1    4350 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:6N136 U?
+U 1 1 61A756F3
+P 3800 6550
+F 0 "U?" H 3800 7000 50  0000 C CNN
+F 1 "6N136" H 3800 6900 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3600 6250 50  0001 L CIN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS70-2008-0032/6N135-L%206N136-L%20series.pdf" H 3800 6550 50  0001 L CNN
+	1    3800 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61D4EAD8
+P 4350 6200
+F 0 "R?" H 4420 6246 50  0000 L CNN
+F 1 "R" H 4420 6155 50  0000 L CNN
+F 2 "" V 4280 6200 50  0001 C CNN
+F 3 "~" H 4350 6200 50  0001 C CNN
+	1    4350 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6350 4200 5950
+Wire Wire Line
+	4200 5950 4350 5950
+Connection ~ 4200 6350
+Wire Wire Line
+	4350 6050 4350 5950
+Connection ~ 4350 5950
+Wire Wire Line
+	4350 5950 5000 5950
+Wire Wire Line
+	4350 6350 4350 6650
+Wire Wire Line
+	4350 6650 4100 6650
+Wire Wire Line
+	4350 6650 4350 6850
+Connection ~ 4350 6650
+Connection ~ 4350 7250
+Wire Wire Line
+	4350 7250 5000 7250
+Wire Wire Line
+	4350 7150 4350 7250
+Wire Wire Line
+	4100 6750 4200 6750
+Wire Wire Line
+	4200 6750 4200 7250
+Connection ~ 4200 7250
+Wire Wire Line
+	4200 7250 4350 7250
+Wire Wire Line
+	4350 6650 4850 6650
+$EndSCHEMATC

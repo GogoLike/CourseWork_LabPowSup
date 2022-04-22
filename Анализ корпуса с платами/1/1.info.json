@@ -1,0 +1,89 @@
+{
+    "version": 0,
+    "model_name": "Корпус с платами.SLDASM",
+    "project_name": "Тепловой анализ",
+    "config_name": "Default",
+    "project_path": "C:\\Data\\Учёба\\CourseWork_LabPowSup\\Анализ корпуса с платами\\1\\1.xmlconfig",
+    "finished": true,
+    "mesh": {
+        "cells_total": 22593,
+        "cells_fluid": 18713,
+        "cells_solid": 3880,
+        "cells_fluid_containing_solid": 6284
+    },
+    "telemetry": {
+        "prepare_geometry_finished": "20:45:51+0300",
+        "prepare_geometry_total_time": 1,
+        "cpu_time_solver_total": 22,
+        "iteration": 95,
+        "travel": 1.7891460962424788,
+        "phys_time": 0.0,
+        "time_step": 0.0,
+        "last_iteration_finished": "20:46:12+0300",
+        "cpu_time_per_last_iter": 1,
+        "cpu_time_left": 35,
+        "iterations_per_travel": 54
+    },
+    "goals": [
+        {
+            "goal": {
+                "name": "GG Среднее Температура (текучая среда) 1",
+                "unit": "temperature",
+                "value": 300.1598611300785,
+                "progress": 100.0,
+                "criteria": 0.004751849911308454,
+                "delta": 0.0015628046318170163,
+                "use_in_convergence": true
+            }
+        },
+        {
+            "goal": {
+                "name": "GG Тепловой поток 2",
+                "unit": "heat flow",
+                "value": 8.310273513683052,
+                "progress": 100.0,
+                "criteria": 0.18709785611836918,
+                "delta": 0.025057958730760888,
+                "use_in_convergence": true
+            }
+        },
+        {
+            "goal": {
+                "name": "GG Среднее Температура (твердое тело) 4",
+                "unit": "temperature",
+                "value": 311.03093783474014,
+                "progress": 100.0,
+                "criteria": 0.2231804812972831,
+                "delta": 0.02100967985563784,
+                "use_in_convergence": true
+            }
+        }
+    ],
+    "settings": {
+        "default_fluids": [
+            "Air"
+        ],
+        "analysis_type": "external",
+        "heat_conduction_in_solids": true,
+        "radiation": false,
+        "time_dependent": false,
+        "gravity": true,
+        "flow_type": "laminar and turbulent",
+        "cavitation": false,
+        "high_mach_number": true,
+        "free_surface": false,
+        "structural": false,
+        "electromagnetism": false
+    },
+    "system_info": {
+        "product_name": "Flow Simulation 2022  x64 / 5482 / SOLVER ver. efd_dev.5398_09.07.2021+ruoghness_1",
+        "cad_version": "SOLIDWORKS 2022 SP1.0",
+        "computer_name": "I-LAPTOP",
+        "user_name": "iekal",
+        "os": "Windows 10 (or higher) (Version 10.0.19043)",
+        "cpu": "AMD Ryzen 5 5600H with Radeon Graphics         ",
+        "number_of_cores": 12,
+        "memory_avail": 8333,
+        "memory_total": 15776
+    }
+}

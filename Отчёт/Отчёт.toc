@@ -1,0 +1,20 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{ВВЕДЕНИЕ}{5}{table.caption.1}%
+\contentsline {section}{\numberline {1}Расчет трансформаторов}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Расчет силовых трансформаторов}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Расчет трансформатора дежурного питания}{14}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Проектирование печатной платы ККМ}{19}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Расчет ширины линий питания}{19}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Расчет зазоров линий ПП}{22}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Определение класса печатной платы}{24}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Проектирование корпуса блока питания}{25}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Проектирование модели корпуса}{25}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Упрощенное представление печатных плат}{26}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Тепловой расчет корпуса}{27}{subsection.3.3}%
+\contentsline {section}{ЗАКЛЮЧЕНИЕ}{32}{figure.caption.26}%
+\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{33}{figure.caption.26}%
+\redeflsection 
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~А}Техническое задание}{35}{section.1}%
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~Б}Структурная схема лабораторного блока питания}{36}{section.2}%
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~В}Принципиальная схема блока дежурного питания}{38}{section.3}%
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~Г}Чертежи корпуса 19'}{42}{section.4}%

@@ -1,0 +1,55 @@
+Model: Корпус с платами.SLDASM
+Project name: Тепловой анализ
+Config name: Default
+Project path: C:\Data\Учёба\CourseWork_LabPowSup\Анализ корпуса с платами\1\1.xmlconfig
+Status: Finished
+
+Number of cells:
+    Total cells: 22593
+    Fluid cells: 18713
+    Solid cells: 3880
+    Fluid cells containing solids: 6284
+
+
+Geometry preparation finished: 20:45:51
+Geometry preparation time: 00:00:01
+Solver CPU time: 00:00:22
+Iterations: 95
+Travels: 1.78915
+Physical time: 0.000000e+00 s
+Current time step: 0.000000e+00 s
+Last iteration finished: 20:46:12
+CPU time per last iteration: 00:00:01
+CPU time left: 00:00:35
+Iterations per 1 travel: 54
+
+Goals
+    Name                                                                   | Unit (SI)   | Value           | Progress  | Critetia        | Delta           | Use in convergence
+    GG Среднее Температура (текучая среда) 1 | temperature |          300.16 |     100.0 |            0.00 |            0.00 | On
+    GG Тепловой поток 2                                       | heat flow   |            8.31 |     100.0 |            0.19 |            0.03 | On
+    GG Среднее Температура (твердое тело) 4   | temperature |          311.03 |     100.0 |            0.22 |            0.02 | On
+
+Project details
+    Default fluids: Air
+    Analysis type: External
+    Heat conduction in solids: On
+    Radiation: Off
+    Time dependent: Off
+    Gravitational effects: On
+    Flow type: Laminar and turbulent
+    Cavitation: Off
+    Hign Mach number flow: On
+    Free surface: Off
+    Structural: Off
+    Electromagnetism: Off
+
+System info
+    Product: Flow Simulation 2022  x64 / 5482 / SOLVER ver. efd_dev.5398_09.07.2021+ruoghness_1
+    CAD version: SOLIDWORKS 2022 SP1.0
+    Computer name: I-LAPTOP
+    User name: iekal
+    Operating system: Windows 10 (or higher) (Version 10.0.19043)
+    Processors: AMD Ryzen 5 5600H with Radeon Graphics         
+    Number of cores: 12
+    Memory: 8333 MB / 15776 MB
+

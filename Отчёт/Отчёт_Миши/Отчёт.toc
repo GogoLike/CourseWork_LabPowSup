@@ -1,0 +1,31 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{ВВЕДЕНИЕ}{5}{table.caption.1}%
+\contentsline {section}{\numberline {1}Определение общей структуры радиовысотомера}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Определение функциональной схемы}{9}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Определение коэффициента затухания зондирующего ипульса}{10}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Определение временных характеристик зондирующего импульса}{14}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Расчёт модуля приёмника}{14}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Выбор схемы приёмника}{14}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Расчёт преобразователя частоты}{15}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Выбор смесительного элемента}{15}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Выбор гетеродина}{16}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Выбор усилителя в цепи гетеродина}{17}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Согласование цепей гетеродина}{19}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Расчёт МШУ}{21}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Выбор усилительного элемента}{21}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Эскизный расчёт чувствительности приёмника}{22}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Согласование с антенно-фидерным трактом}{24}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Межкаскадное согласование}{26}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Согласование с преобразователем частоты}{28}{subsubsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.4}Расчёт цепей ПЧ}{29}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Выбор АЦП}{29}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Выбор усилительных элементов}{30}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Расчёт антиалисингового ФНЧ}{32}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Определение потребляемых мощностей}{34}{subsection.2.5}%
+\contentsline {section}{ЗАКЛЮЧЕНИЕ}{35}{table.caption.37}%
+\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{36}{table.caption.37}%
+\redeflsection 
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~А}Техническое задание}{38}{section.1}%
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~Б}Функциональная схема радиовысотомера}{43}{section.2}%
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~В}S-параметры цепей согласования приёмника}{45}{section.3}%
+\contentsline {section}{\numberline {ПРИЛОЖЕНИЕ~Г}Схемы модуля приёмника}{50}{section.4}%
